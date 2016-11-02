@@ -24,8 +24,17 @@
 
 (setq org-confirm-babel-evaluate nil)
 
-(require 'ox-context)
- 
+(add-to-list 'org-latex-classes
+             '("per-file-class"
+               "\\documentclass[oneside,a4paper]{scrartcl}
+            [NO-DEFAULT-PACKAGES]
+            [NO-PACKAGES]"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
 (provide 'zonk-org-mode)
 ;; zonk-org-mode.el ends here
 
