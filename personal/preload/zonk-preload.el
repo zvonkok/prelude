@@ -1,5 +1,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/personal/preload")
+(add-to-list 'load-path "~/.emacs.d/personal/git/emacs-material-theme")
 
 ;; (require 'powerline)
 
@@ -19,6 +20,7 @@
 (spaceline-spacemacs-theme)
 (spaceline-helm-mode)
 
+(require 'material-theme)
 (load-theme 'material t)
 (disable-theme 'zenburn)
 (setq prelude-theme 'material)

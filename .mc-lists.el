@@ -19,7 +19,9 @@
 (setq mc/cmds-to-run-once
       '(
         crux-move-beginning-of-line
+        helm-occur
         mouse-set-region
         org-ctrl-c-ctrl-c
+        org-export-dispatch
         which-key-C-h-dispatch
         ))

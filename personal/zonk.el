@@ -53,3 +53,6 @@
 
 (require 'zonk-c-mode)
 (require 'zonk-org-mode)
+(require 'zonk-R-mode)
+(require 'zonk-ess-mode)
+(require 'zonk-pdf-mode)

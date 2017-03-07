@@ -11,7 +11,7 @@
 
 
 ;;; Code:
-(prelude-require-packages '(pdf-tools))
+(prelude-require-packages '(pdf-tools interleave))
 
 
 (require 'pdf-view)
@@ -27,7 +27,6 @@
                                 (pdf-view-midnight-minor-mode)))
 
 (provide 'init-pdfview)
-
 
 
 (provide 'zonk-pdf-mode)

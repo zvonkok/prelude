@@ -19,6 +19,7 @@
    (quote
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(org-confirm-babel-evaluate nil)
+ '(org-ditaa-jar-path "/usr/share/ditaa/ditaa.jar")
  '(org-fontify-whole-heading-line t)
  '(org-hide-leading-stars nil)
  '(org-highlight-latex-and-related (quote (latex script entities)))
@@ -29,7 +30,7 @@
      ("melpa" . "http://melpa.milkbox.net/packages/"))))
  '(package-selected-packages
    (quote
-    (spaceline solarized-theme git-commit helm helm-core magit magit-popup sbt-mode which-key with-editor color-theme-sanityinc-tomorrow smyx-theme rainbow-identifiers org yasnippet elfeed-org ensime scala-mode multiple-cursors powerline projectile markdown-mode polymode zop-to-char zenburn-theme volatile-highlights undo-tree smex smartrep smartparens smart-tabs-mode smart-mode-line rainbow-mode rainbow-delimiters ov operate-on-number move-text mc-extras json-mode js2-mode imenu-anywhere ido-ubiquitous helm-projectile helm-descbinds helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region ess-view ess-smart-underscore ess-smart-equals ess-R-object-popup ess-R-data-view elscreen-multi-term elisp-slime-nav easy-kill dockerfile-mode discover-my-major diminish diff-hl csv-mode company cmake-mode browse-kill-ring beacon anzu airline-themes ace-window)))
+    (interleave pdf-tools rtags cmake-ide spaceline solarized-theme git-commit helm helm-core magit magit-popup sbt-mode which-key with-editor color-theme-sanityinc-tomorrow smyx-theme rainbow-identifiers org yasnippet elfeed-org ensime scala-mode multiple-cursors powerline projectile markdown-mode polymode zop-to-char zenburn-theme volatile-highlights undo-tree smex smartrep smartparens smart-tabs-mode smart-mode-line rainbow-mode rainbow-delimiters ov operate-on-number move-text mc-extras json-mode js2-mode imenu-anywhere ido-ubiquitous helm-projectile helm-descbinds helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region ess-view ess-smart-underscore ess-smart-equals ess-R-object-popup ess-R-data-view elscreen-multi-term elisp-slime-nav easy-kill dockerfile-mode discover-my-major diminish diff-hl csv-mode company cmake-mode browse-kill-ring beacon anzu airline-themes ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
