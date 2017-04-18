@@ -6,12 +6,8 @@
 
 (desktop-save-mode 1)
 
-
-
 (require 'package)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
-
-
 
 (when (>= emacs-major-version 24)
   (require 'package)
@@ -20,7 +16,6 @@
    '("melpa" . "http://melpa.org/packages/")
    t)
   (package-initialize))
-
 
 ;;; Auto refresh in docview
 (add-hook 'doc-view-mode-hook 'auto-revert-mode)
@@ -38,7 +33,6 @@
 
 (require 'multi-term)
 (setq multi-term-program "/usr/bin/zsh")
-
          
  
 (require 'ob-sh)
@@ -50,9 +44,15 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 
+(global-set-key (kbd "C-c j") 'avy-goto-word-or-subword-1)
+(global-set-key (kbd "s-.") 'avy-goto-word-or-subword-1)
+(global-set-key (kbd "s-w") 'avy-window)
+
 
 (require 'zonk-c-mode)
 (require 'zonk-org-mode)
 (require 'zonk-R-mode)
 (require 'zonk-ess-mode)
 (require 'zonk-pdf-mode)
+(require 'zonk-gtags-mode)
+(require 'ox-context)
