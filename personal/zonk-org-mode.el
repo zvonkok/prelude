@@ -14,13 +14,23 @@
 (prelude-require-packages '(org))
 
 (org-babel-do-load-languages
- 'org-babel-load-languages '(
-  (R . t)
-  (ditaa . t)
-  (latex . t)
+ 'org-babel-load-languages
+ '((R . t)
+   (ditaa . t)
+   (latex . t)
+   (shell .t)
   )
  )
 
+
+(org-add-link-type
+ "latex" nil
+ (lambda (path desc format)
+   (cond
+    ((eq format 'html)
+     (format "<span class=\"%s\">%s</span>" path desc))
+    ((eq format 'latex)
+     (format "\\%s{%s}" path desc)))))
 
 
 
@@ -44,9 +54,6 @@
              '("" "tikz" t)
              '("" "minted" t)
              )
-
-
-
 
 
 
@@ -81,6 +88,10 @@
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+
+
+
 
 
 

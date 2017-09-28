@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        TeX-insert-backslash
         c-electric-delete-forward
         c-electric-paren
         c-electric-semi&comma
@@ -19,6 +20,7 @@
 (setq mc/cmds-to-run-once
       '(
         crux-move-beginning-of-line
+        helm-mini
         helm-occur
         mouse-set-region
         org-ctrl-c-ctrl-c
